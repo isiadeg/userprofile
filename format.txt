@@ -1,0 +1,43 @@
+For package display;
+the package details should be in this format;
+packagess=[{
+	  id : 1,
+pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+packageName: "Household Waste Disposal",
+packagePrice: 20000,
+packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+Your waste may include kitchen, paper, carton and fabric wastes `,
+packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+'Spill over unused subscription', 'Monthly Customer Rewards']
+  },
+  {
+  	  id : 2,
+  pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+  packageName: "Household Waste Disposal",
+  packagePrice: 20000,
+  packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+  Your waste may include kitchen, paper, carton and fabric wastes `,
+  packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+  'Spill over unused subscription', 'Monthly Customer Rewards']
+    },
+    {
+    	  id : 3,
+    pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+    packageName: "Household Waste Disposal",
+    packagePrice: 20000,
+    packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+    Your waste may include kitchen, paper, carton and fabric wastes `,
+    packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+    'Spill over unused subscription', 'Monthly Customer Rewards']
+      },
+      {
+      	  id : 4,
+      pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+      packageName: "Household Waste Disposal",
+      packagePrice: 20000,
+      packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+      Your waste may include kitchen, paper, carton and fabric wastes `,
+      packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+      'Spill over unused subscription', 'Monthly Customer Rewards']
+        }
+  ];

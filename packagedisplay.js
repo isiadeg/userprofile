@@ -9,40 +9,35 @@ packageItems: ['Customer Care Support', '1 extra  free week disposal service', '
 'Spill over unused subscription', 'Monthly Customer Rewards']
   },
   {
-	  id : 2,
-pictureUrl: ["./assets/picture1.png", "./assets/logo.jpg"],
-packageName: "Blog or News Package",
-packagePrice: 20000,
-packageDetails:`By its own nature,
-the abstracts implemented in this article are incomplete.
- At Etiya, where I work, we have much more robust classes with mappers,
- default value getters, secondary generic types, conditional value limiters,
- predefined lifecycle-hooks, and more. We owe that to OOP features available in
- Angular and an unrelenting search for better code.<p>I cannot think of any reason
- not to adopt such a productive practice immediately. In fact, we have not stumbled
- on any drawbacks so far and are enjoying it every day.Happy new year</p>`,
-
-packageItems: ['6 month Support','2 revisions for free', 'One year Hosting',
-'Guide clients on domain registration', 'Search Engine Optimization', 'Responsive Mobile Design',
-'Social Media Integration(facebook, whatsapp, twitter)']
-  },
-  {
-	  id : 3,
-pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
-packageName: "Blog or News Package",
-packagePrice: 20000,
-packageDetails:`By its own nature,
-the abstracts implemented in this article are incomplete.
- At Etiya, where I work, we have much more robust classes with mappers,
- default value getters, secondary generic types, conditional value limiters,
- predefined lifecycle-hooks, and more. We owe that to OOP features available in
- Angular and an unrelenting search for better code.<p>I cannot think of any reason
- not to adopt such a productive practice immediately. In fact, we have not stumbled
- on any drawbacks so far and are enjoying it every day.Happy new year</p>`,
-packageItems: ['6 month Support','2 revisions for free', 'One year Hosting',
-'Guide clients on domain registration', 'Search Engine Optimization', 'Responsive Mobile Design',
-'Social Media Integration(facebook, whatsapp, twitter)']
-  }
+  	  id : 2,
+  pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+  packageName: "Household Waste Disposal",
+  packagePrice: 20000,
+  packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+  Your waste may include kitchen, paper, carton and fabric wastes `,
+  packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+  'Spill over unused subscription', 'Monthly Customer Rewards']
+    },
+    {
+    	  id : 3,
+    pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+    packageName: "Household Waste Disposal",
+    packagePrice: 20000,
+    packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+    Your waste may include kitchen, paper, carton and fabric wastes `,
+    packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+    'Spill over unused subscription', 'Monthly Customer Rewards']
+      },
+      {
+      	  id : 4,
+      pictureUrl: ["./assets/picture1.png", "./assets/picture2.png"],
+      packageName: "Household Waste Disposal",
+      packagePrice: 20000,
+      packageDetails:`With 20000, You get a household waste disposal service three days a week for 3 months.
+      Your waste may include kitchen, paper, carton and fabric wastes `,
+      packageItems: ['Customer Care Support', '1 extra  free week disposal service', '3 days A week',
+      'Spill over unused subscription', 'Monthly Customer Rewards']
+        }
   ];
   let htmli;
   htmli = `<div id="choose_package"> CHOOSE PACKAGE`;
