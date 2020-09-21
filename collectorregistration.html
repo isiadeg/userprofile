@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="collectorregistration.css" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Hind:wght@500&family=Open+Sans+Condensed:wght@300&family=Play&display=swap" rel="stylesheet">
+      <script src="collectorregistration.js"></script>
+    </head>
+    <body>
+      <div class="indexwrapper">
+
+
+
+        <div class="loginwrapper">
+          <div class="loginheader">
+            Register
+          </div>
+            <div class="loginbody">
+              <form method="post" class="bodywrapper" action="">
+               <div class="detailsblock">
+                  <label for="companyname">Company Name</label>
+                   <input class="details" type ="text" id="companyname"
+                  placeholder="Company Name" name="companyname"
+                  >
+                  <span class="errormessage" id="companynameerror"></span>
+                </div>
+
+               <div class="detailsblock">
+                  <label for="companyaddress">Company Address</label>
+                   <input class="details" type ="text" id="companyaddress"
+                  placeholder="Company Address" name="Company Address"
+                  >
+                  <span class="errormessage " id="companyaddresserror"></span>
+                </div>
+
+
+
+
+
+               <div class="detailsblock">
+                  <label for="wh_mon_fri_start">Working Hours(Monday - Friday)</label>
+                  From  <input class="details" type ="time" id="wh_mon_fri_start" name="wh_mon_fri_start"
+                  > To  <input class="details" type ="time" id="wh_mon_fri_end" name="wh_mon_fri_end"
+                  >
+                  <span class="errormessage" id="wh_mon_frierror"></span>
+                </div>
+
+               <div class="detailsblock">
+                  <label for="wh_sat_start">Working Hours(Saturday)</label>
+                  From  <input class="details" type ="time" id="wh_sat_start" name="wh_sat_start"
+                  > To  <input class="details" type ="time" id="wh_sat_end" name="wh_sat_end"
+                  >
+                  <span class="errormessage" id="wh_saterror"></span>
+                </div>
+
+                <div class="detailsblock">
+                   <label for="wh_sun_start">Working Hours(Sunday)</label>
+                   From  <input class="details" type ="time" id="wh_sun_start" name="wh_sun_start"
+                   > To  <input class="details" type ="time" id="wh_sun_end" name="wh_sun_end"
+                   >
+                   <span class="errormessage" id="wh_sunerror"></span>
+                 </div>
+
+
+             <div class="detailsblock">
+                <label for="email">Business Email</label>
+                 <input class="details" type ="email" id="email"
+                placeholder="email" name="email"
+                >
+                <span class="errormessage" id="emailerrormessage"></span>
+              </div>
+
+
+               <div class="detailsblock">
+                  <label for="phonenumber">Business Phone Number</label>
+                   <input class="details" type ="password" id="phonenumber"
+                  placeholder="Phone Number" name="phonenumber"
+                  >
+                  <span class="errormessage" id="phonenumbererrormessage"></span>
+                </div>
+
+
+
+
+
+
+            <div class="detailsblock" id="passportupload">
+             <div class="detailsblock">
+                <label for="certificateupload">Upload Your Business Certificate</label>
+
+                 <input class="details noborder" type ="file" id="certificateupload" name="certificateupload" formenctype="multipart/form-data" >
+
+                <div class="uploadpicture">
+                  <button class="button" onclick="uploading('passport');">Upload Certificate</button>
+                  </div>
+                <div class="loading"id="loadingpassport">
+                  <div class="filling" id="fillingpassport"> </div>
+                </div>
+                 <input class="details" style="display:none" id="uploadcertificatemessage">
+                  </div>
+                  <div style="" id="uploadcertificateerrormessage">
+                    </div>
+                </div>
+
+
+
+          <div class="detailsblock" id="idcardupload">
+           <div class="detailsblock">
+              <label for="idcard">Upload Representative I.D.Card </label>
+               <input class="details noborder" type ="file" id="idcard" name="idcard" formenctype="multipart/form-data" >
+              <div class="uploadpicture">
+                <button class="button" onclick="uploading('idcard');">upload I.D.Card</button>
+                </div>
+              <div class="loading" id="loadingidcard">
+                <div class="filling" id="fillingidcard">
+                </div>
+              </div>
+               <input class="details" type="text" style="display:none;" id="idcardmessage">
+
+                <div  id="idcarderrormessage">
+                  </div>
+            </div>
+
+          </div>
+
+          <div class="detailsblock">
+             <label for="servicedescription">Short Description of Your Services </label>
+             <textarea id="servicedescription" name="servicedescription" > </textarea>
+
+             <span class="errormessage" id="servicedescriptionerror"></span>
+           </div>
+                      <div class="detailsblock" id="serviceimageupload">
+                       <div class="detailsblock">
+                          <label for="serviceimage">Upload Images of Your Services</label>
+
+                           <input class="details noborder" type ="file" id="serviceimage" multiple name="serviceimage" formenctype="multipart/form-data" >
+
+                          <div class="uploadpicture">
+                            <button class="button" onclick="uploading('serviceimage');">Upload Image</button>
+                            </div>
+                          <div class="loading"id="loadingserviceimage">
+                            <div class="filling" id="fillingserviceimage"> </div>
+                          </div>
+                           <input class="details" type="text" name="serviceimagemessage" style="display:none" id="serviceimagemessage">
+
+                            <div style="" id="serviceimagerrormessage">
+                              </div>
+                          </div>
+
+
+                      </div>
+
+
+               <div >
+                   <input  class="button" type ="submit" (click)="save();" id="submit" [disabled]="!registerform.valid" value="Submit" id="submit">
+
+                </div>
+
+
+
+              </form>
+
+
+              </div>
+
+
+          </div>
+      </div>
+    </body>
+    </html>

@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+
+      <link href="collectorregistration.css" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Hind:wght@500&family=Open+Sans+Condensed:wght@300&family=Play&display=swap" rel="stylesheet">
+      <script src="collectorregistration.js"></script>
+      <style>
+        @media only screen and (min-width: 1000px){
+      .detailsblock {
+
+      height: auto;
+      }
+    }
+      </style>
+    </head>
+
+    <body>
+<form method="post" class="bodywrapper" action="">
+  <div class="detailsblock">
+     <label for="packagename">Package Name</label>
+      <input class="details" type ="text" id="packagename"
+     placeholder="Package Name" name="packagename"
+     >
+     <span class="errormessage" id="packagenameerror"></span>
+   </div>
+
+<div class="detailsblock">
+   <label for="servicedescription">Package Description</label>
+   <textarea id="servicedescription" name="servicedescription" > </textarea>
+
+   <span class="errormessage" id="servicedescriptionerror"></span>
+ </div>
+ <div class="detailsblock" id="featuresandtags">
+   <div id="addfeatures" onclick= createfeatures(); class="plusbutton"> + </div>
+   <div class="featuresblock" id="featureblock">
+    <label for="features">Features and Tags</label>
+    <input id="features" name="features" class="features" onkeyup="createarray();">
+
+
+    <span class="errormessage" id="featureserrormessage"></span>
+  </div>
+  </div>
+
+  <div class="detailsblock">
+     <label for="packageprice">Package Price (N)</label>
+      <input class="details" type ="number" id="packageprice"
+     placeholder="Package Price" name="packageprice"
+     >
+     <span class="errormessage" id="packagepriceerror"></span>
+   </div>
+            <div class="detailsblock" id="serviceimageupload">
+             <div class="detailsblock">
+                <label for="serviceimage">Upload Images of Your Services</label>
+
+                 <input class="details noborder" type ="file" id="serviceimage" multiple name="serviceimage" formenctype="multipart/form-data" >
+
+                <div class="uploadpicture">
+                  <button class="button" onclick="uploading('serviceimage');">Upload Image</button>
+                  </div>
+                <div class="loading"id="loadingserviceimage">
+                  <div class="filling" id="fillingserviceimage"> </div>
+                </div>
+                 <input class="details" type="text" name="serviceimagemessage" style="display:none" id="serviceimagemessage">
+
+                  <div style="" id="serviceimagerrormessage">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="detailsblock" style="display:none;">
+               <label for="featuresarray">Features and Tags Array </label>
+                <input class="details" type ="text" id="featuresarray"
+                name="featuresarray"
+               >
+               <span class="errormessage" id="featuresarrayerrormessage"></span>
+             </div>
+     <div >
+         <input  class="button" type ="submit" (click)="save();" id="submit" [disabled]="!registerform.valid" value="Submit" id="submit">
+
+      </div>
+
+
+
+    </form>
+    </body>
+    </html>
